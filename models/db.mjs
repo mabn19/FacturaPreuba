@@ -18,7 +18,7 @@ export const sequelizeInstance = new Sequelize({
   setUpModels(sequelizeInstance);
   
   (async () => {
-    await sequelizeInstance.sync({ force: true });
+    await sequelizeInstance.sync();
     // Code here
   })();
 
